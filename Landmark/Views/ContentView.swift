@@ -1,21 +1,21 @@
 //
 //  ContentView.swift
-//  Landmark
+//  Landmarks
 //
-//  Created by Ali Parandeh on 12/12/2020.
+//  Created by Ali Parandeh on 10/12/2020.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        LandmarkList()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
     }
 }
